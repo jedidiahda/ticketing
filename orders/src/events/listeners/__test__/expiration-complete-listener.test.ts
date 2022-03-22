@@ -56,6 +56,6 @@ it('emit an ordercancelled event', async () => {
 
 it('ackt the message', async () => {
   const { listener, order, ticket, data, msg } = await setup();
-  listener.onMessage(data,msg);
+  await listener.onMessage(data,msg);
   expect(msg.ack).toHaveBeenCalled();
 })
