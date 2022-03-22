@@ -3,6 +3,8 @@ import { app } from "./app";
 
 //to connect to mongoose db, we can use auth-mongo-srv
 const startUp =async () => {
+  console.log('starting up...')
+  console.log('starting up...')
   if(!process.env.JWT_KEY){
     throw Error('JWT_KEY doesn\'t existed');
   }
