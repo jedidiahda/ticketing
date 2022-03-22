@@ -8,7 +8,8 @@ import { PaymentCreatedListener } from "./events/listeners/payment-created-liste
 
 //to connect to mongoose db, we can use auth-mongo-srv
 const startUp =async () => {
-  console.log("application start")
+  console.log('application start')
+  console.log('application start')
   if(!process.env.JWT_KEY){
     throw Error('JWT_KEY doesn\'t existed');
   }
